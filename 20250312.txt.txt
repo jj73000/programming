@@ -1,0 +1,75 @@
+#include <stdio.h>
+
+int main(void) {
+    printf("%d\n",10);
+    printf("%lf\n", 3.4);
+    printf("%.1lf\n", 3.45);
+    printf("%.10lf\n", 3.4);
+    printf("%d와 %d의 합은 %d입니다.\n", 10, 20, 10 + 20);
+    printf("%.1lf - %.1lf = %.1lf\n", 3.4, 1.2, 3.4 - 1.2);
+
+    printf("%d\n", 12);
+    printf("%d\n", 014);
+    printf("%o\n", 014);
+    printf("%d\n", 0xc);
+    printf("%x\n", 0xc);
+    printf("%.7lf\n", 3.14e-5);
+
+    printf("%.1lf\n", 1e6);
+    printf("%.7lf\n", 3.14e-5);
+    printf("%le\n",0.0000314);
+    printf("%2le\n", 0.0000314);
+
+    printf("%c\n", 'A');
+    printf("%c %c %c\n", 'A', 'B', 'C');
+    printf("%s\n", "A");
+    printf("%s\n", "ABCDefg");
+    printf("%c은 %s입니다.\n", '1', "first");
+    printf("%c\n", 0x65);
+    printf("%d\n", 'A');
+    printf("%d\n", 'B');
+    printf("%d\n", 'A' + 1 );
+    printf("%d\n", 'A' - 'a');
+    printf("%c\n", 'A' + 25);
+
+    printf("학번 : %d\n",32165);
+    printf("이름 : %s\n", "홍길동");
+    printf("학점 : %c\n", 'A');
+    return 0;
+
+}
+
+
+#include <stdio.h>
+
+int main() {
+    printf("Hello world!\n");
+    printf("방정진\n"); 
+    
+    int a;
+    a = 5;
+    printf("a = %d\n", a);
+    printf("a-5 = %d\n", a-5);
+    printf("a+5 = %d\n", a+5);
+    printf("a*5 = %d\n", a*5);
+
+    
+    printf("1부터 10까지의 합:%d\n",1+2+3+4+5+6+7+8+9+10);
+    
+    int sum=0;
+    for(int i=1; i<=100; i++)
+        sum+=i; 
+    printf("1부터 100까지의 합:%d\n", sum);
+
+    int k;
+    int result;
+    printf("첫 번째 값을 입력하세요: ");
+    scanf("%d", &k);
+    printf("입력된 k의 값: %d\n", k);
+    result = k * 100;
+    printf("입력된 k의 값: %d\n", result);
+
+    
+
+    return 0;
+}
